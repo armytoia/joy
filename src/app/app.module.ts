@@ -7,15 +7,16 @@ import { SplashScreen } from '@ionic-native/splash-screen/ngx';
 import { StatusBar } from '@ionic-native/status-bar/ngx';
 
 import { AppComponent } from './app.component';
+import { FormsModule} from '@angular/forms';
 import { AppRoutingModule } from './app-routing.module';
 import { MassaGordaInicioComponent } from './component/massagordainicio/massagordainicio.component';
 import { MassaGordaMeioComponent } from './component/massagordameio/massagordameio.component';
 import { MassaGordaFimComponent } from './component/massagordafim/massagordafim.component';
 
 @NgModule({
-  declarations: [AppComponent, MassaGordaInicioComponent , MassaGordaMeioComponent , MassaGordaFimComponent],
+  declarations: [AppComponent,MassaGordaInicioComponent,MassaGordaMeioComponent,MassaGordaFimComponent],
   entryComponents: [],
-  imports: [BrowserModule, IonicModule.forRoot(), AppRoutingModule],
+  imports: [BrowserModule, IonicModule.forRoot(), AppRoutingModule, FormsModule],
   providers: [
     StatusBar,
     SplashScreen,
