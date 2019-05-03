@@ -1,6 +1,5 @@
 {
   "name": "joy",
   "integrations": {},
-  "type": "angular",
-  "app_id": ""
+  "type": "angular"
 }

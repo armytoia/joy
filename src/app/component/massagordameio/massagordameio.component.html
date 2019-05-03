@@ -6,12 +6,12 @@
    </ion-toolbar>
 </ion-header>
 <ion-content>
-  <h3>Nome:</h3><ion-input [(ngModel)] = "nome"></ion-input>
-  <h3>Idade:</h3><ion-input [(ngModel)] = "idade" ></ion-input>
-  <h3>Telefone(obs:apenas números):</h3><ion-input [(ngModel)] = "telefone" ></ion-input>
-  <h3>Senha(obs:apenas letras):</h3><ion-input [(ngModel)] = "senha" ></ion-input>
-  <h3>Confirmação da senha:</h3><ion-input [(ngModel)] = "confsenha" ></ion-input>
-  <h3>Você pratica atividade física?</h3>
+  <h4>Nome:</h4><ion-input [(ngModel)] = "nome"></ion-input>
+  <h4>Idade:</h4><ion-input [(ngModel)] = "idade" ></ion-input>
+  <h4>Telefone(obs:apenas números):</h4><ion-input [(ngModel)] = "telefone" ></ion-input>
+  <h4>Senha(obs:apenas letras):</h4><ion-input [(ngModel)] = "senha" ></ion-input>
+  <h4>Confirmação da senha:</h4><ion-input [(ngModel)] = "confsenha" ></ion-input>
+  <h4>Você pratica atividade física?</h4>
 
   <ion-button (click) = "sim()">sim</ion-button>
   <ion-button (click) = "nao()">não</ion-button>
@@ -19,8 +19,8 @@
 
   <h5>Clique após terminar</h5>
   <ion-button (click) = "cadastrar()">cadastrar</ion-button>
+
+  <ion-button color = " medium " href = "massagordafim"> calcular massa gorda </ion-button><ion-button color = " light " href = "massagordainicio"> Voltar para o início </ion-button>
 </ion-content>
 <ion-footer>
-  <ion-button color = " medium " href = "massagordafim"> calcular massa gorda </ion-button>
-  <ion-button color = " light " href = "massagordainicio"> Voltar para o início </ion-button>
 </ion-footer>

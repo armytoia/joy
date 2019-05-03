@@ -21,12 +21,7 @@ export class MassaGordaMeioComponent{
     alert("Não perca mais tempo e comece enquanto há tempo!");
   }
   cadastrar(): void{
-    let idade = Number(this.idade);
-    let telefone = Number(this.telefone);
-    if(senha =! confsenha){
-      alert("Confira sua senha novamente")  
-    }else{
+
       alert("Cadastro realizado com sucesso!");
     }
   }
-}
