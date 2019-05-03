@@ -6,16 +6,24 @@
    </ion-toolbar>
 </ion-header>
 <ion-content>
-  <h3>IMC:</h3><ion-input [(ngModel)] = "imc"></ion-input>
-  <h3>Idade:</h3><ion-input [(ngModel)] = "idade" ></ion-input>
-  <h3>Sexo:</h3><ion-input [(ngModel)] = "sexo" ></ion-input>
+  <ion-label>IMC:</ion-label>
+  <ion-input [(ngModel)] = "imc"></ion-input>
+  <ion-label>Idade:</ion-label>
+  <ion-input [(ngModel)] = "idade" ></ion-input>
+  <ion-item>
+  <ion-label>Sexo:</ion-label>
+  <ion-select multiple = "true" >
+  <ion-select-option velue = "sexo" selected> feminino </ion-select-option>
+  </ion-select>
+  </ion-item>
 
 
 
-  <ion-button color = " medium "(click) = "calcular()"> calcular </ion-button>
+  <ion-button expand= "full" (click) = "calcular()"> calcular </ion-button>
 
-  <ion-button color = " sucess " href = "massagordameio"> voltar </ion-button>
-  <ion-button color = " light " href = "massagordainicio"> voltar para o início </ion-button>
+  <ion-button  href = "massagordameio"> voltar </ion-button>
+  <ion-button href = "massagordainicio"> Voltar para o início </ion-button>
+
 </ion-content>
 <ion-footer>
 </ion-footer>
