@@ -7,6 +7,7 @@ import { MassaGordaFimComponent } from './component/massagordafim/massagordafim.
 const routes: Routes = [
   { path: '', redirectTo: 'home', pathMatch: 'full' },
   { path: 'home', loadChildren: './home/home.module#HomePageModule' },
+  { path: 'massagordainicio', component: MassaGordaInicioComponent },
   { path: 'massagordameio', component: MassaGordaMeioComponent },
   { path: 'massagordafim', component: MassaGordaFimComponent }
 ];
