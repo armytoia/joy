@@ -1,28 +1,29 @@
 <ion-header>
   <ion-toolbar>
     <ion-title>
-      Calcular massa gorda
+      Verificação
     </ion-title>
    </ion-toolbar>
 </ion-header>
 <ion-content>
-  <ion-label>IMC:</ion-label>
-  <ion-input [(ngModel)] = "imc"></ion-input>
-  <ion-label>Idade:</ion-label>
-  <ion-input [(ngModel)] = "idade" ></ion-input>
+  <ion-label>valor de a:</ion-label>
+  <ion-input position = "floating" [(ngModel)] = "a"></ion-input>
+  <ion-label>valor de b:</ion-label>
+  <ion-input position = "floating" [(ngModel)] = "b"></ion-input>
+  <ion-label>valor de c:</ion-label>
+  <ion-input position = "floating" [(ngModel)] = "c"></ion-input>
+  <ion-label>Cordenada X do ponto:</ion-label>
+  <ion-input position = "floating" [(ngModel)] = "x" ></ion-input>
   <ion-item>
-  <ion-label>Sexo:</ion-label>
-  <ion-select multiple = "true" >
-  <ion-select-option velue = "sexo" selected> feminino </ion-select-option>
-  </ion-select>
+  <ion-label>Codenada Y do ponto:</ion-label>
+  <ion-input position = "floating" [(ngModel)] = "y" ></ion-input>
   </ion-item>
 
 
 
-  <ion-button expand= "full" (click) = "calcular()"> calcular </ion-button>
+  <ion-button expand= "full" color = "success" shape = round (click) = "verificar()"> verificar </ion-button>
 
-  <ion-button  href = "massagordameio"> voltar </ion-button>
-  <ion-button href = "massagordainicio"> Voltar para o início </ion-button>
+  <ion-button  href = "home"> voltar </ion-button>
 
 </ion-content>
 <ion-footer>

@@ -6,20 +6,34 @@ templateUrl : 'massagordafim.component.html'
 })
 
 export class MassaGordaFimComponent{
-  imc: number =0;
-  idade: number = 0;
-  sexo: string;
+  a: number;
+  b: number;
+  c: number;
+  x: number ;
+  y: number;
 
-  calcular(): void{
-    let imc = Number(this.imc);
-    let idade = Number(this.idade);
-    let total = (1.20 * imc) + (0.23 * idade) - (10.8 * 0) - 5.4;
-    let resultado = (1.20 * imc) + (0.23 * idade) - (10.8 * 1) - 5.4;
+  verificar(): void{
+    let a = Number(this.a);
+    let b = Number(this.b;
+    let c = Number(this.c);
+    let x = Number(this.x);
+    let y = Number(this.y);
 
-    if(this.sexo == "feminino"){
-      alert("Sua porcentagem de massa gorda é:" +total+"%");
-    }else{
-      alert("Sua porcentagem de massa gorda é:" +resultado+"%");
+    if(a*x + b*y + c == 0){
+      alert("Esse ponto pertence a reta!");
     }
+    else if(a*x + b*y == 0 && c == 0){
+      alert("Esse ponto pertence a reta!");
+    }
+    else if(a*x + c == 0 && b == 0){
+      alert("Esse ponto pertence a reta!");
+    }
+    else if(b*x + c == 0 && a == 0){
+      alert("Esse ponto pertence a reta!");
+    }
+    else{
+      alert("Esse ponto não pertence a reta!");
+    }
+
   }
 }
